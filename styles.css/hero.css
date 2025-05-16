@@ -15,7 +15,7 @@ section.hero {
   }
 
   & h1 div {
-    display: inline-block;
+    display:inline-block;
     overflow: hidden;
     height: 5rem;
     width: min-content;
@@ -226,5 +226,31 @@ section.hero {
 
     100% {
       transform: translateY(-15rem);
+    }
+  }
+
+  @media (width <= 48em) {
+    section.hero {
+      display: flex;
+      flex-direction: column-reverse;
+      overflow: hidden;
+      max-width: 40em;
+      margin-inline: auto;
+
+     & h1 {
+      text-align: center;
+     }
+
+ 
+
+      & h1 div {
+       height: 2rem;
+       display: inline-block;
+       align-items: center;
+       justify-content: center;
+       overflow: hidden;
+       width: min-content;
+      }
+
     }
   }
