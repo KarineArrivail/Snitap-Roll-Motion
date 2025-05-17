@@ -2,6 +2,7 @@
   width: 100%;
   padding-block: 2.5rem;
   overflow: hidden;
+  margin-top: -1.1rem;
 
   .scroller {
     width: 100%;
@@ -23,7 +24,7 @@
         var(--snitap-joy-light));
         background-size: 400%;
         position: 0 50%;
-        animation: bg-gradient 20s ease infinite;
+        animation: bg-gradient 10s ease infinite;
   }
   
 }
